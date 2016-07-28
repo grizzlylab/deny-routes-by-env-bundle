@@ -26,7 +26,6 @@ class Configuration implements ConfigurationInterface
                 ->end()
                 ->arrayNode('denied_routes')
                     ->isRequired()
-                    ->requiresAtLeastOneElement()
                     ->prototype('scalar')->end()
                 ->end()
                 ->arrayNode('redirection_route')
