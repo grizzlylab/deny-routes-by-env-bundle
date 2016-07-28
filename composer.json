@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "description": "Deny routes for one or several environments",
     "keywords": ["routing", "environment"],
-    "homepage": "https://github.com/grizzlylab/MailerBundle",
+    "homepage": "https://github.com/grizzlylab/deny-routes-by-env-bundle",
     "license": "MIT",
     "authors": [
         {
