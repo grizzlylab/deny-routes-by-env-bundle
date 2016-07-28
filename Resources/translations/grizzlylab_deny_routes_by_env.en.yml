@@ -1,1 +1,1 @@
-route_is_denied: "Vous ne pouvez accéder à %uri% dans l'environnment %environment%."
+route_is_denied: "You cannot access %uri% in the environment %environment%."
