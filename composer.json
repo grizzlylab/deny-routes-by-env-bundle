@@ -1,0 +1,23 @@
+{
+    "name": "grizzlylab/deny-routes-by-env-bundle",
+    "type": "symfony-bundle",
+    "description": "Deny routes for one or several environments",
+    "keywords": ["routing", "environment"],
+    "homepage": "https://github.com/grizzlylab/MailerBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jean-Louis Pirson",
+            "email": "jl.pirson@grizzlylab.be"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "symfony/symfony": "~2.7|~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Grizzlylab\\Bundle\\DenyRoutesByEnvBundle\\": ""
+        }
+    }
+}
