@@ -6,5 +6,4 @@ services:
         class: "%grizzlylab_deny_routes_by_env.class%"
         arguments: ["@router", "@translator", "%kernel.environment%", "%grizzlylab_deny_routes_by_env_config%"]
         tags:
-            #To make sure the appropriate route is already found, we have to give our listener a lower priority. RouterListener has priority 32, so we choose a lower number.
-            - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest, priority: 30 }
+            - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
