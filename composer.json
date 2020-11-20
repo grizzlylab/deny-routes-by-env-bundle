@@ -12,8 +12,11 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
-        "symfony/symfony": "~2.7|~3.0|~4.0"
+        "php": "^7.4",
+        "symfony/http-kernel": "^4.4",
+        "symfony/routing": "^4.4",
+        "symfony/translation": "^4.4",
+        "symfony/framework-bundle": "^4.4"
     },
     "autoload": {
         "psr-4": {

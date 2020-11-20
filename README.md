@@ -6,16 +6,12 @@ When a route is denied, it will create a flash message and redirect the user to 
 
 Example: You don't want your users to be able to access the route "acme_xyz" when the environment is "dev" or "demo".
 
-###1. Requirements
-   * "php": ">=7.0"
-   * "symfony/symfony": "~2.7|~3.0"
-
-###2. Installation
+###1. Installation
 
 - ```composer require 'grizzlylab/deny-routes-by-env-bundle@dev-master'```
 - in AppKernel.php: ```new Grizzlylab\Bundle\DenyRoutesByEnvBundle\GrizzlylabDenyRoutesByEnvBundle()```
 
-###3. Configuration
+###2. Configuration
 
 a) Configure your main configuration file (app/config/config.yml):
 ```
@@ -35,8 +31,6 @@ grizzlylab_deny_routes_by_env:
     # deny these routes for the environment "dev"
     denied_routes:        ['first_route', 'second_route'] # Required
 ```
-
-###4. Discussions and pull requests are welcome !
 
 License
 -------

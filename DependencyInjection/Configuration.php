@@ -6,20 +6,16 @@ use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 /**
- * Class Configuration
- * @package Grizzlylab\Bundle\DenyRoutesByEnvBundle\DependencyInjection
- * @author  Jean-Louis Pirson <jl.pirson@grizzlylab.be>
+ * @author Jean-Louis Pirson <jl.pirson@grizzlylab.be>
  */
 class Configuration implements ConfigurationInterface
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function getConfigTreeBuilder()
+    public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('grizzlylab_deny_routes_by_env');
-        $rootNode
+        $treeBuilder = new TreeBuilder('grizzlylab_deny_routes_by_env');
+
+        $treeBuilder
+            ->getRootNode()
             ->children()
                 ->scalarNode('message_type')
                     ->defaultValue('grizzlylab_deny_routes_by_env.danger')

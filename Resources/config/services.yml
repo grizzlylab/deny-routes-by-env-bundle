@@ -1,9 +1,9 @@
-parameters:
-    grizzlylab_deny_routes_by_env.class: Grizzlylab\Bundle\DenyRoutesByEnvBundle\EventListener\DenyRoutesByEnvListener
-
 services:
-    grizzlylab_deny_routes_by_env.kernel.listener.deny_routes_by_env:
-        class: "%grizzlylab_deny_routes_by_env.class%"
-        arguments: ["@router", "@translator", "%kernel.environment%", "%grizzlylab_deny_routes_by_env_config%"]
+    Grizzlylab\Bundle\DenyRoutesByEnvBundle\EventListener\DenyRoutesByEnvListener:
+        arguments:
+            - "@router"
+            - "@translator"
+            - "%kernel.environment%"
+            - "%grizzlylab_deny_routes_by_env_config%"
         tags:
             - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
