@@ -13,10 +13,10 @@
     ],
     "require": {
         "php": "^7.4",
-        "symfony/http-kernel": "^4.4",
-        "symfony/routing": "^4.4",
-        "symfony/translation": "^4.4",
-        "symfony/framework-bundle": "^4.4"
+        "symfony/http-kernel": "^4.4|^5.1",
+        "symfony/routing": "^4.4|^5.1",
+        "symfony/translation": "^4.4|^5.1",
+        "symfony/framework-bundle": "^4.4|^5.1"
     },
     "autoload": {
         "psr-4": {
